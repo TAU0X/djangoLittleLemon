@@ -10,12 +10,19 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
+<<<<<<< HEAD
 import os
+=======
+>>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
@@ -27,7 +34,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+<<<<<<< HEAD
 # Application definition
+=======
+
+# Application definition
+
+>>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -35,7 +48,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+<<<<<<< HEAD
     # App for the Graded assessment
+=======
+    # The settings for app updated for the Graded assessment
+>>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
     'restaurant',
 ]
 
@@ -54,8 +71,13 @@ ROOT_URLCONF = 'littlelemon.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+<<<<<<< HEAD
         # Template settings for the Graded assessment
         'DIRS': ['restaurant/templates'],
+=======
+        # The settings for templates updated for the Graded assessment
+        'DIRS': ['restaurant/templates' ],
+>>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -70,8 +92,15 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'littlelemon.wsgi.application'
 
+<<<<<<< HEAD
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+=======
+
+# Database
+# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
+
+>>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -79,8 +108,17 @@ DATABASES = {
     }
 }
 
+<<<<<<< HEAD
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
+=======
+# The settings for media files have been updated for the Graded assessment
+MEDIA_URL = '/media/'
+
+# Password validation
+# https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
+
+>>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -96,6 +134,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+<<<<<<< HEAD
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 LANGUAGE_CODE = 'en-us'
@@ -117,4 +156,32 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+=======
+
+# Internationalization
+# https://docs.djangoproject.com/en/4.1/topics/i18n/
+
+LANGUAGE_CODE = 'en-us'
+
+TIME_ZONE = 'UTC'
+
+USE_I18N = True
+
+USE_TZ = True
+
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/4.1/howto/static-files/
+
+# The settings for static files have been updated for the Graded assessment
+STATIC_URL = 'restaurant/static/'
+
+STATICFILES_DIRS = [
+    "restaurant/static",
+]
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
+
+>>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

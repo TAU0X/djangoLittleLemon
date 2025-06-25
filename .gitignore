@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 __pycache__/
 *.py[cod]
 *.sqlite3
@@ -12,4 +13,20 @@ db.sqlite3
 /media/
 .vscode/
 .idea/
+=======
+__pycache__/
+*.py[cod]
+*.sqlite3
+env/
+venv/
+*.log
+*.pot
+*.pyc
+*.pyo
+db.sqlite3
+/staticfiles/
+/media/
+.vscode/
+.idea/
+>>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
 .env
