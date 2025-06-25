@@ -12,8 +12,7 @@ class Booking(models.Model):
       return self.first_name + ' ' + self.last_name
 
 
-<<<<<<< HEAD
-# Add code to create Menu model
+
 class Menu(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
@@ -22,6 +21,3 @@ class Menu(models.Model):
 
     def __str__(self):
         return self.name
-=======
-# Add code to create Menu model
->>>>>>> 49ddca9892d8ce8080d3c1e09a4d79bda59804d4
