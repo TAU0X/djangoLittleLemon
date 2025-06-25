@@ -2,7 +2,7 @@
 from django.shortcuts import render
 from .forms import BookingForm
 #from .models import Menu
-from .models import Product
+from .models import Menu
 
 
 # Create your views here.
@@ -22,6 +22,6 @@ def book(request):
     return render(request, 'book.html', context)
 
 # Add your code here to create new views
-def product_list(request):
-    products = Product.objects.all()
-    return render(request, 'product_list.html', {'products': products})
+def menu(request):
+    menu = Menu.objects.all()
+    return render(request, 'menu.html', {'menu': menu})

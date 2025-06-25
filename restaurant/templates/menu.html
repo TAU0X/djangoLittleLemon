@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bakery Menu</title>
+    <style>
+        body { font-family: Arial; background-color: #fff7ed; padding: 20px; }
+        .menu { background: white; padding: 20px; margin: 10px 0; border-radius: 8px; box-shadow: 0 2px 6px #ccc; }
+        img { max-width: 200px; height: auto; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <h1>Our Freshly Baked Products</h1>
+    {% for product in products %}
+        <div class="product">
+            <h2>{{ product.name }}</h2>
+            {% if product.image %}
+                <img src="{{ product.image.url }}" alt="{{ product.name }}">
+            {% endif %}
+            <p>{{ product.description }}</p>
+            <p><strong>${{ product.price }}</strong></p>
+        </div>
+    {% endfor %}
+</body>
+</html>
